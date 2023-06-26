@@ -24,6 +24,11 @@ docker run \
     lutfailham/tunondocker:latest
 ```
 
+## Create tunnel user
+```shell
+docker exec -it tunondocker createuser.sh <USERNAME> <PASSWORD>
+```
+
 ## Environment variables
 ```
 # log settings
