@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  tunondocker:
+    image: lutfailham/tunondocker:latest
+    container_name: tunondocker
+    restart: always
+    ports:
+      - "80:80"
+      - "442:442"
+      - "443:443"
+      - "8082:8082"
+      - "7300:7300"
+    volumes:
+      - "${PWD}/data/passwd:/etc/data/passwd"
+      - "${PWD}/data/group:/etc/data/group"
+      - "${PWD}/data/shadow:/etc/data/shadow"
