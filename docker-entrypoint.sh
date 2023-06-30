@@ -38,4 +38,8 @@ if [ ${BADVPN_UDPGW_ENABLED:-true} = true ]; then
     --listen-addr ${BADVPN_UDPGW_HOST:-0.0.0.0}:${BADVPN_UDPGW_PORT:-7300}
 fi
 
+# initializing user & group
+echo "user-group: initializing ..."
+restore-user.sh
+
 tail -f /dev/null
