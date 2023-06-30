@@ -2,6 +2,7 @@ version: "3.8"
 
 services:
   tunondocker:
+    build: .
     image: lutfailham/tunondocker:latest
     container_name: tunondocker
     restart: always
