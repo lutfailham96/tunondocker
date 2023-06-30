@@ -58,7 +58,10 @@ COPY ./badvpn/badvpn-udpgw /usr/local/bin/
 COPY ./badvpn/badvpn-ncd /usr/local/bin/
 COPY ./badvpn//badvpn-ncd-request /usr/local/bin/
 # Custom scripts
-COPY ./createuser.sh /usr/local/bin/
+COPY ./custom/createuser.sh /usr/local/bin/
+COPY ./custom/updatepassword.sh /usr/local/bin/
+COPY ./custom/dump-user.sh /usr/local/bin/
+COPY ./custom/restore-user.sh /usr/local/bin/
 # Entrypoint
 COPY docker-entrypoint.sh /
 
